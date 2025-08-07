@@ -9,13 +9,17 @@ public class FizzBuzzModel {
 
         if (isDivisibleBy3 && isDivisibleBy5) {
             return "FizzBuzz";
-        } else if (isDivisibleBy3) {
-            return "Fizz";
-        } else if (isDivisibleBy5) {
-            return "Buzz";
-        } else {
-            return String.valueOf(numb);
         }
+
+        if (isDivisibleBy3) {
+            return "Fizz";
+        }
+
+        if (isDivisibleBy5) {
+            return "Buzz";
+        }
+
+        return String.valueOf(numb);
 
     }
 }
