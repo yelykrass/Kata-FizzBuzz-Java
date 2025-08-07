@@ -37,4 +37,13 @@ public class FizzBuzzModelTest {
         assertThat(result, is(equalTo(expected)));
     }
 
+    @Test
+    void testCheckNumber_NumberDivisibleBy3And5_ShouldReturnFizzBuzz() {
+        int numb = 15;
+        String expected = "FizzBuzz";
+        // When
+        String result = fizzBuzz.checkNumber(numb);
+        // Then
+        assertThat(result, is(equalTo(expected)));
+    }
 }
