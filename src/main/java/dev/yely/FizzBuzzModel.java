@@ -13,8 +13,9 @@ public class FizzBuzzModel {
             return "Fizz";
         } else if (isDivisibleBy5) {
             return "Buzz";
+        } else {
+            return String.valueOf(numb);
         }
-        return String.valueOf(numb);
-    }
 
+    }
 }

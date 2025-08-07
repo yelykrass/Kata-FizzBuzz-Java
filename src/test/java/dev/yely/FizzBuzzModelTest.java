@@ -46,4 +46,14 @@ public class FizzBuzzModelTest {
         // Then
         assertThat(result, is(equalTo(expected)));
     }
+
+    @Test
+    void testCheckNumber_NumberReturnOriginal_ShouldReturnOriginal() {
+        int numb = 7;
+        String expected = "7";
+        // When
+        String result = fizzBuzz.checkNumber(numb);
+        // Then
+        assertThat(result, is(equalTo(expected)));
+    }
 }
