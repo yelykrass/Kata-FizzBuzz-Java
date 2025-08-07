@@ -10,7 +10,7 @@ public final class App {
     public static void main(String[] args) {
         FizzBuzzModel model = new FizzBuzzModel();
         FizzBuzzView view = new FizzBuzzView();
-        FizzBuzzControler controler = new FizzBuzzControler(model, view);
+        FizzBuzzController controler = new FizzBuzzController(model, view);
 
         controler.run();
     }
