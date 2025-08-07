@@ -68,7 +68,7 @@ public class FizzBuzzModelTest {
     }
 
     @Test
-    void testCheckNumber_NumberContainsBy3AndDivisibleBy5_ShouldReturnFizz() {
+    void testCheckNumber_NumberContainsBy3AndDivisibleBy5_ShouldReturnFizzBuzz() {
         int numb = 534;
         String expected = "FizzBuzz";
         // When
@@ -76,4 +76,15 @@ public class FizzBuzzModelTest {
         // Then
         assertThat(result, is(equalTo(expected)));
     }
+
+    @Test
+    void testCheckNumber_NumberContainsBy5AndDivisibleBy5_ShouldReturnFizz() {
+        int numb = 25;
+        String expected = "Buzz";
+        // When
+        String result = fizzBuzz.checkNumber(numb);
+        // Then
+        assertThat(result, is(equalTo(expected)));
+    }
+
 }
